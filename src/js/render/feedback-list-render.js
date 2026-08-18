@@ -1,9 +1,13 @@
-import starSprite from '../../img/sprite.svg';
+import starSprite from '../../img/sprite.svg?url';
 
 function renderStarIcon(type) {
   return `
-    <svg class="star__icon star__icon--${type}" viewBox="0 0 34 32" aria-hidden="true">
-      <use href="../../img/sprite.svg#star-${type}"></use>
+    <svg
+      class="star__icon star__icon--${type}"
+      viewBox="0 0 34 32"
+      aria-hidden="true"
+    >
+      <use href="${starSprite}#star-${type}"></use>
     </svg>
   `;
 }
