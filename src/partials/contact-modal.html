@@ -1,0 +1,75 @@
+<div class="order-modal-backdrop is-hidden" aria-hidden="true">
+  <div
+    class="order-modal-box"
+    role="dialog"
+    aria-modal="true"
+    aria-labelledby="order-modal-title"
+  >
+    <button
+      class="order-modal-close"
+      type="button"
+      aria-label="Закрити модальне вікно"
+    >
+      <svg width="24" height="24">
+        <use href="./img/sprite.svg#icon-close"></use>
+      </svg>
+    </button>
+
+    <h2 class="order-modal-title" id="order-modal-title">
+      Оформлення замовлення
+    </h2>
+
+    <form class="order-modal-form">
+      <input class="order-modal-dessert-id" type="hidden" name="dessertId" />
+      <input
+        class="order-modal-dessert-name"
+        type="hidden"
+        name="dessertName"
+      />
+
+      <div class="order-modal-field">
+        <label class="order-modal-label" for="modal-user-name">Ім'я*</label>
+        <input
+          class="order-modal-input"
+          type="text"
+          id="modal-user-name"
+          name="name"
+          placeholder="Вікторія"
+          minlength="2"
+          maxlength="48"
+          required
+        />
+      </div>
+
+      <div class="order-modal-field">
+        <label class="order-modal-label" for="modal-user-phone">Телефон*</label>
+        <input
+          class="order-modal-input"
+          type="tel"
+          id="modal-user-phone"
+          name="phone"
+          pattern="^\+?380[0-9]{9}$"
+          placeholder="38 0__ _______"
+          required
+        />
+      </div>
+
+      <div class="order-modal-field">
+        <label class="order-modal-label" for="modal-user-comment"
+          >Коментар*</label
+        >
+        <textarea
+          class="order-modal-textarea"
+          id="modal-user-comment"
+          name="comment"
+          placeholder="Ваш коментар"
+          minlength="2"
+          maxlength="256"
+          required
+        ></textarea>
+      </div>
+
+      <button class="order-modal-submit" type="submit">Надіслати заявку</button>
+    </form>
+  </div>
+</div>

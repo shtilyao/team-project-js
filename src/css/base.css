@@ -1,0 +1,94 @@
+:root {
+  /* Typography & Layout */
+  scroll-behavior: smooth;
+
+  --font-family-main: 'Work Sans', sans-serif;
+  --font-family-secondary: 'Comfortaa', sans-serif;
+
+  --font-size-base: 18px;
+  --line-height-base: 1.5;
+
+  /* Global Colors */
+  --color-main: #080c0c;
+  --color-bg: #f5fdfd;
+  --color-error: #d50000;
+  --pixel-overlay: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
+
+  /* Buttons */
+  /* Primary Button */
+  --btn-primary-bg-normal: #f19898;
+  --btn-primary-bg-hover: #f5b6b6;
+  --btn-primary-bg-active: #c07979;
+  --btn-primary-border-color: #080c0c;
+  --btn-primary-text-color: #080c0c;
+
+  /* Secondary Button */
+  --btn-secondary-bg-normal: transparent;
+  --btn-secondary-bg-hover: #f19898;
+  --btn-secondary-bg-active: #c07979;
+  --btn-secondary-border-color: #080c0c;
+  --btn-secondary-text-color: #080c0c;
+
+  /* Links */
+  --link-color-normal: #080c0c;
+  --link-color-hover: #080c0c;
+  --link-color-active: #f19898;
+
+  /* Inputs & Textarea */
+  /* Base Input */
+  --input-bg-color: transparent;
+  --input-border-color: #080c0c;
+  --input-border-radius: 12px;
+  --input-text-color: #080c0c;
+  --input-placeholder-color: rgba(8, 12, 12, 0.6);
+
+  /* Input States */
+  --input-border-hover: #f19898;
+  --input-border-focus: #f19898;
+
+  /* Input Error State */
+  --input-border-error: #d50000;
+  --input-text-error: #d50000;
+
+  /* Select Dropdown */
+  --select-bg: transparent;
+  --select-border-color: #202424;
+  --select-dropdown-bg: #ebfcfb;
+  --select-option-hover-bg: transparent;
+  --select-scrollbar-track: #f5b6b6;
+  --select-scrollbar-thumb: #603c3c;
+
+  /* Slider Arrows */
+  --slider-arrow-bg-normal: #f5fdfd;
+  --slider-arrow-bg-hover: #f19898;
+  --slider-arrow-bg-active: #c07979;
+
+  --slider-arrow-border-normal: #080c0c;
+  --slider-arrow-icon-color: #080c0c;
+
+  /* Transition */
+  --transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  /* System settings */
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: 100%;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  margin: 0;
+  font-family: var(--font-family-main);
+  font-size: var(--font-size-base);
+  line-height: var(--line-height-base);
+  color: var(--color-main);
+  background-color: var(--color-bg);
+}
+
+main {
+  flex-grow: 1;
+}
